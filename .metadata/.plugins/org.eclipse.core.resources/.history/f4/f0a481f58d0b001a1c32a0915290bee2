@@ -1,0 +1,43 @@
+package z_exam;
+
+public class StringMethodExam {
+
+	public static void main(String[] args) {
+			
+//		String str = new String("hello");
+		String str = "hello";
+		System.out.println(str.length()); //문자열 길이 구해서 반환해줌
+		System.out.println(str.concat("world"));
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

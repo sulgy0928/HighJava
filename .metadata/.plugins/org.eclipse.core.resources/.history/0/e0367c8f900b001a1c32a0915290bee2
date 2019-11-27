@@ -1,0 +1,48 @@
+package z_exam;
+
+public class StringMethodExam {
+
+	public static void main(String[] args) {
+			
+//		String str = new String("hello");
+		String str = "hello";
+		System.out.println(str.length()); //문자열 길이 구해서 반환해줌
+		System.out.println(str.concat("world"));
+		System.out.println(str);
+		//String 은 참조형이라 한번 만들어진 객체를 바꾸지않는다. (불변클래스)라고 함.
+		str = str.concat(" world");
+		System.out.println(str);
+		
+		System.out.println(str.substring(3));
+		System.out.println(str.substring(3, 7));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

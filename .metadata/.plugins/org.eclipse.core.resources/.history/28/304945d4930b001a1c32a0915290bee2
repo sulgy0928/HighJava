@@ -1,0 +1,10 @@
+package z_exam;
+
+public class VariableScopeExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

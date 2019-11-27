@@ -1,0 +1,97 @@
+package kr.or.ddit.basic;
+
+import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.ComboBox;
+import javafx.stage.Stage;
+
+public class T10_ComboBoxTest extends Application{
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		
+		
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception{
+		VBox vbox = new VBox(10);
+		ComboBox<MyFriend> combo = new ComboBox<>();
+		TextArea result = new TextArea;
+		
+		ObservableList<MyFriend> list = FXCollections.observableArrayList();
+		list.add(new MyFriend("a001", "홍길동", "010-1111-1111", "대전"));
+		list.add(new MyFriend("a001", "홍길동", "010-1111-1111", "대전"));
+		list.add(new MyFriend("a001", "홍길동", "010-1111-1111", "대전"));
+		list.add(new MyFriend("a001", "홍길동", "010-1111-1111", "대전"));
+		list.add(new MyFriend("a001", "홍길동", "010-1111-1111", "대전"));
+		
+		combo.setItems(list);
+		
+		//ComboBox의 목록이 보여지는 곳의 내용 변경하기
+		//화면에 나타나는 셀의 내용을 변경하는 부분으로 
+		//이 부분의 변경 내용은 셀 부분만 변경된다.
+		
+		combo.setCellFactory(new Callback<ListView<MyFriend>, ListCell<MyFriend>>(){
+			
+			
+	
+		@Override
+		public ListCell<MyFriend> callI(ListView<MyFriend> param){
+			return new ListCell<MyFriend>() {
+				protected void updateItem(MyFriend item,)
+			}
+		}
+			
+		});
+	}
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+	// 데이터를 나타내는 클래스를 inner클래스로 선언한다.
+	class MyFriend {
+		private String id;
+		private String name;
+		private String tel;
+		private String addr;
+		
+		combo.setValue(list.get(0));
+		
+		//ComboBox를 setOnAction 처리하기
+		combo.setOnAction(new EventHandler<ActionEvent>() {
+			
+		})
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

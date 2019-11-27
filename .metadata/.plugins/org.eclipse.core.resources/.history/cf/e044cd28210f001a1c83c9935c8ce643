@@ -1,0 +1,30 @@
+package kr.or.ddit.basic;
+
+import java.awt.TextArea;
+
+import javafx.application.Application;
+import javafx.scene.control.ComboBox;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.stage.Stage;
+
+public class T09_ComboBoxTest extends Application{
+	
+	@Override
+	public void start(Stage primaryStage) throws Exception{
+		BorderPane root = new BorderPane();
+		HBox hbox = new HBox();
+		TextArea txtArea = new TextArea();
+		
+		ComboBox<String> combo = new ComboBox<>();
+		combo.getItems().addAll("한강", "금강","영산강","낙동강");
+		combo.setValue("한강"); // 처음에 보이는 부분의 데이터세팅
+		
+		//방법 1)) ComboBox의 값이 변경될 떄의 처리, 즉 change 이벤트 처리.
+		
+		combo.setOnAction(e->{
+			System.out.println(((ComboBox<String>)e.getSource()).getSelectionModel().getSelectedItem());
+		});
+	}
+
+}

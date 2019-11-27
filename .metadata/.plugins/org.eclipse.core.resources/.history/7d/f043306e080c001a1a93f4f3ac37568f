@@ -1,0 +1,82 @@
+package kr.or.ddit.basic;
+
+public class T02_LambdaTest {
+
+	public static void main(String[] args) {
+/*			// 람다식을 쓰지않은경우
+		
+		LambdaTestInterface1 lam1 = new LambdaTestInterface1() {
+			
+			@Override
+			public void test() {
+				System.out.println("안녕하세요.");
+				System.out.println("익명구현객체 방식입니다.");
+			}
+	};*/
+	
+	LambdaTestInterface1 lam1 = ()->{
+		System.out.println("반가워요.\t 람다식으로 처리하는 방식입니다.");
+	};
+	
+	lam1.test(); // 메서드 호출
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

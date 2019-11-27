@@ -1,0 +1,20 @@
+package kr.or.ddit.basic;
+
+public class T02_LambdaTest {
+
+	public static void main(String[] args) {
+			// 람다식을 쓰지않은경우
+		
+		LambdaTestInterface1 lam1 = new LambdaTestInterface1() {
+			
+			@Override
+			public void test() {
+				System.out.println("안녕하세요.");
+				System.out.println("익명구현객체 방식입니다.");
+			}
+		};
+	
+	
+	}
+
+}
